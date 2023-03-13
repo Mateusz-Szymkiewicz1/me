@@ -9,7 +9,7 @@ body{
     padding: 20px;
 }
 h1{
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     text-align: center;
     margin: 0;
     margin-top: 60px;
@@ -17,7 +17,7 @@ h1{
 }
 .h3_desc{
     text-align: center;
-    font-size: 27px;
+    font-size: 1.65rem;
     margin-top: 10px;
     font-weight: 100;
     text-decoration: underline;
@@ -32,4 +32,22 @@ button{
 ::selection{
     color: #208c71;
     background: #fff;
+}
+@media only screen and (hover: none) and (pointer: coarse){
+    h1{
+        font-size: 4rem;
+        margin-top: 100px;
+    }
+    .h3_desc{
+        font-size: 2.4rem;
+    }
+    .title-bar{
+        height: 40px;
+        padding-left: 10px;
+        font-size: 22px;
+    }
+    .title-bar button{
+        transform: scale(2.1);
+        margin-right: 25px;
+    }
 }
