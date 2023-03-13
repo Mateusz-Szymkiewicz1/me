@@ -24,7 +24,8 @@ h1{
 }
 .window{
     color: #000;
-    height: 350px;
+    min-height: 350px;
+    height: 80vh;
     margin-bottom: 50px;
 }
 .window p{
@@ -33,7 +34,7 @@ h1{
 }
 menu li {
     background: silver;
-    font-size: 1.3rem;
+    font-size: 22px;
 }
 .main_wrapper{
     width: 80%;
