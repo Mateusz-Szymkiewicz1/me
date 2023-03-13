@@ -6,6 +6,7 @@ body{
     background: #208c71;
     font-family: mainFont;
     overflow-x: hidden;
+    padding: 20px;
 }
 h1{
     font-size: 2.5rem;
@@ -25,12 +26,8 @@ button{
     cursor: pointer;
 }
 .main_window{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
     overflow: auto;
+    height: 100vh;
 }
 ::selection{
     color: #208c71;
