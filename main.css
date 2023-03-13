@@ -1,44 +1,38 @@
 @font-face {
   font-family: mainFont;
-  src: url(font.otf);
+  src: url(font.ttf);
 }
 body{
     background: #208c71;
     font-family: mainFont;
-    color: #fff;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
 h1{
-    font-size: 42px;
-    letter-spacing: 1px;
+    font-size: 2.5rem;
     text-align: center;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 60px;
+    font-weight: 600;
 }
 .h3_desc{
     text-align: center;
-    font-size: 22px;
-    margin-top: 5px;
+    font-size: 27px;
+    margin-top: 10px;
+    font-weight: 100;
+    text-decoration: underline;
 }
-.window{
-    color: #000;
-    min-height: 350px;
-    height: 80vh;
-    margin-bottom: 50px;
+button{
+    cursor: pointer;
 }
-.window p{
-    font-size: 22px;
-    margin-left: 10px;
+.main_window{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    overflow: auto;
 }
-menu li {
-    background: silver;
-    font-size: 22px;
-}
-.main_wrapper{
-    width: 80%;
-    min-width: 424px;
-    margin: auto;
-    margin-top: 80px;
+::selection{
+    color: #208c71;
+    background: #fff;
 }
