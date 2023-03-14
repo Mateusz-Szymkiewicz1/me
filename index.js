@@ -1,5 +1,10 @@
 document.querySelector("#btn_min").addEventListener("click", function(){
     document.querySelector(".main_window").style.display = "none";
+    document.querySelector(".min_window").style.display = "flex";
+})
+document.querySelector("#btn_max").addEventListener("click", function(){
+    document.querySelector(".main_window").style.display = "block";
+    document.querySelector(".min_window").style.display = "none";
 })
 function responsivity(x) {
     if (x.matches){
