@@ -34,7 +34,7 @@ button{
 }
 .main_window{
     overflow: auto;
-    height: 4000px;
+    height: 5000px;
     min-height: 100vh;
 }
 .title-bar{
@@ -248,6 +248,29 @@ legend{
     padding-left: 0;
     font-size: 22px !important;
 }
+#section_portfolio{
+    clear: both;
+    width: 90%;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.portfolio_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 30px;
+}
+#section_portfolio fieldset{
+    height: 300px;
+    width: 320px;
+}
+#section_portfolio img{
+    margin-top: 10px;
+    height: 260px;
+    width: 315px;
+    cursor: pointer;
+}
 @media only screen and (min-width: 1200px) {
     #section_dosw{
         width: 70%;
@@ -262,10 +285,29 @@ legend{
         font-size: 20px;
     }
 }
+@media only screen and (max-width: 900px) {
+    #section_portfolio{
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 585px) {
+    #section_portfolio{
+        width: 285px;
+    }
+    #section_portfolio fieldset{
+        height: 250px;
+        width: 260px;
+    }
+    #section_portfolio img{
+        margin-top: 10px;
+        height: 210px;
+        width: 255px;
+    }
+}
 /* Style na urządzenia mobilne */
 @media only screen and (hover: none) and (pointer: coarse){
     .window{
-        height: 5000px;
+        height: 9000px;
     }
     h1{
         font-size: 4.2rem;
@@ -330,8 +372,8 @@ legend{
     h4{
         font-size: 35px;
     }
-    #h4_dosw{
-        font-size: 45px;
+    #h4_dosw, #h4_portfolio{
+        font-size: 48px;
     }
     .section{
         width: 85%;
@@ -391,7 +433,7 @@ legend{
         margin-bottom: 40px;
         padding: 40px;
     }
-    #section_umiej legend{
+    legend{
         font-size: 42px;
     }
     #section_umiej i{
@@ -406,5 +448,30 @@ legend{
         margin-left: 10px !important;
         padding-left: 0;
         font-size: 38px !important;
+    }
+    #section_portfolio{
+        padding: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 100px;
+    }
+    .portfolio_wrapper{
+        justify-content: center;
+    }
+    .portfolio_wrapper legend{
+        margin-left: 20px;
+    }
+    #section_portfolio fieldset{
+        border-image-width: 7px;
+        height: 600px;
+        width: 620px;
+        margin-top: 70px;
+    }
+    #section_portfolio img{
+        margin-top: 30px;
+        margin-left: 20px;
+        height: 500px;
+        width: 570px;
+        cursor: pointer;
     }
 }
