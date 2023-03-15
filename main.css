@@ -144,6 +144,7 @@ h4{
     overflow-y: auto;
     height: 145px;
     padding-top: 55px;
+    margin-bottom: 150px;
 }
 .timeline {
   list-style-type: none;
@@ -197,6 +198,33 @@ h4{
   width: 200px;
   height: 100%;
   position: relative;
+}
+#h4_umiej{
+    clear: both;
+    margin-top: 0;
+}
+.window_job .window-body{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.window_job .title-bar{
+    cursor: move;
+}
+.window_job h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.window_job h5{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.window_job h6{
+    font-size: 13px;
+    margin-top: 0px;
+}
+.window_job p{
+    font-size: 23px;
 }
 @media only screen and (min-width: 1200px) {
     #section_dosw{
@@ -290,5 +318,41 @@ h4{
     }
     .time-line-box{
         transform: scale(2);
+    }
+    .window_job{
+        height: 640px !important;
+        width: 800px !important;
+        margin-top: -320px !important;
+        margin-left: -400px !important;
+    }
+    .window_job .title-bar{
+        height: 64px;
+        font-size: 32px;
+        padding-left: 20px;
+    }
+    .window_job button{
+        transform: scale(2.85);
+    }
+    .window_job .window-body{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .window_job h3{
+        margin-top: 60px;
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+    .window_job h5{
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .window_job h6{
+        font-size: 33px;
+        margin-top: 0px;
+    }
+    .window_job p{
+        font-size: 52px;
+        line-height: 75px;
     }
 }
