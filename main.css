@@ -34,7 +34,7 @@ button{
 }
 .main_window{
     overflow: auto;
-    height: 3000px;
+    height: 4000px;
     min-height: 100vh;
 }
 .title-bar{
@@ -226,6 +226,28 @@ h4{
 .window_job p{
     font-size: 23px;
 }
+legend{
+    background: transparent;
+}
+#section_umiej fieldset{
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 95%;
+}
+#section_umiej i{
+    font-size: 36px;
+}
+#section_umiej span{
+    font-size: 26px;
+    margin-left: 15px;
+    line-height: 60px;
+}
+.span_umiej_no_icon{
+    margin-left: 5px !important;
+    padding-left: 0;
+    font-size: 22px !important;
+}
 @media only screen and (min-width: 1200px) {
     #section_dosw{
         width: 70%;
@@ -235,8 +257,16 @@ h4{
         text-align: center;
     }
 }
+@media only screen and (max-width: 590px) {
+    #section_umiej span{
+        font-size: 20px;
+    }
+}
 /* Style na urządzenia mobilne */
 @media only screen and (hover: none) and (pointer: coarse){
+    .window{
+        height: 5000px;
+    }
     h1{
         font-size: 4.2rem;
         margin-top: 150px;
@@ -354,5 +384,27 @@ h4{
     .window_job p{
         font-size: 52px;
         line-height: 75px;
+    }
+    #section_umiej fieldset{
+        border-image-width: 7px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 40px;
+    }
+    #section_umiej legend{
+        font-size: 42px;
+    }
+    #section_umiej i{
+        font-size: 80px;
+    }
+    #section_umiej span{
+        font-size: 46px;
+        margin-left: 30px;
+        line-height: 120px;
+    }
+    .span_umiej_no_icon{
+        margin-left: 10px !important;
+        padding-left: 0;
+        font-size: 38px !important;
     }
 }

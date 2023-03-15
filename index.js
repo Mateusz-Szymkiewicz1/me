@@ -78,6 +78,11 @@ document.querySelectorAll(".status span").forEach(span => {
         $(".window_job").draggable();
         div.querySelector("button").addEventListener("click",function(){
             document.querySelector(".window_job").remove();
+            if(document.querySelector(".window_job")){
+                document.querySelector(".window_job").style.opacity = "0";
+                document.querySelector(".window_job").style.pointerEvents = "none";
+                document.querySelector(".window_job").removeAttribute("class");
+            }
         })
     })
 })
