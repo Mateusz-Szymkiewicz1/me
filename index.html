@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Mateusz Szymkiewicz</title>
+     <link rel="icon" type="image/x-icon" href="res/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/98.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/e603884ebd.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="index.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
 </head>
-<body>
-    <div class="window main_window">
+<body onload="hide_preloader()">
+    <div class="preloader">
+        <img src="res/loader.gif">
+    </div>
+    <div class="window main_window" style="display: none;">
         <div class="title-bar">
-            <div class="title-bar-text"><i class="fa fa-file">&nbsp;&nbsp;</i><span style="text-decoration:underline;">i</span>ndex.html</div>
+            <div class="title-bar-text"><i class="fa fa-file">&nbsp;&nbsp;</i>index.html</div>
             <div class="title-bar-controls">
                 <button aria-label="Help"></button>
                 <button aria-label="Minimize" id="btn_min"></button>
@@ -90,23 +96,23 @@
             <div class="portfolio_wrapper">
                 <fieldset>
                     <legend>Świętokrzyski Geoguessr</legend>
-                    <img src="res/placeholder.png" draggable="false">
+                    <a href="https://github.com/Mateusz-Szymkiewicz1?tab=repositories" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
                 </fieldset>
                 <fieldset>
                     <legend>Meow Clicker</legend>
-                    <img src="res/placeholder.png" draggable="false">
+                    <a href="https://mateusz-szymkiewicz1.github.io/meow_clicker/" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
                 </fieldset>
                 <fieldset>
                     <legend>Pierwszak Symulator</legend>
-                    <img src="res/placeholder.png" draggable="false">
+                    <a href="https://github.com/Mateusz-Szymkiewicz1?tab=repositories" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
                 </fieldset>
                 <fieldset>
                     <legend>Kazachstan.net</legend>
-                    <img src="res/placeholder.png" draggable="false">
+                    <a href="https://github.com/Mateusz-Szymkiewicz1/kazachstan.net" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
                 </fieldset>
                 <fieldset>
                     <legend>Potato Service</legend>
-                    <img src="res/placeholder.png" draggable="false">
+                    <a href="https://github.com/Mateusz-Szymkiewicz1/potato_service" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
                 </fieldset>
             </div>
         </div>
@@ -114,7 +120,7 @@
         <div class="section" id="section_kontakt">
             <i class="fa fa-envelope"></i><span> szymkiewiczmateusz1@gmail.com</span><br/>
             <i class="fa-brands fa-github"></i><a href="https://github.com/Mateusz-Szymkiewicz1" target="_blank" style="color: #969eff;text-decoration: underline;"><span> Mateusz-Szymkiewicz1</span></a><br/>
-            <i class="fa-brands fa-linkedin"></i><span> Lorem Ipsum</span><br/>
+            <i class="fa-brands fa-linkedin"></i><a href="#" target="_blank" style="color: #969eff;text-decoration: underline;"><span> Lorem Ipsum</span></a><br/>
             <span class="span_umiej_no_icon">lub</span><br/><br/>
             <form method="post">
                 <label>Wiadomość</label><br/>
@@ -133,7 +139,7 @@
                 <button aria-label="Maximize" id="btn_max"></button>
             </div>
     </div>
-    <div class="window kitty">
+    <div class="window kitty" style="display: none;">
         <div class="title-bar">
             <div class="title-bar-text"><i class="fa fa-image">&nbsp;&nbsp;</i>kitty.jpg</div>
             <div class="title-bar-controls">

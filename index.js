@@ -76,7 +76,7 @@ document.querySelectorAll(".status span").forEach(span => {
         div.style.cssText = `height: 280px;width: 380px;position: fixed;top: ${window.innerHeight/2}px;left: ${window.innerWidth/2}px;margin-top: -140px;margin-left: -190px;`;
         document.body.appendChild(div);
         $(".window_job").draggable();
-        div.querySelector("button").addEventListener("click",function(){
+        document.querySelector(".window_job button").addEventListener("click",function(){
             document.querySelector(".window_job").style.display = "none";
             document.querySelector(".window_job").remove();
             if(document.querySelector(".window_job")){
@@ -84,4 +84,34 @@ document.querySelectorAll(".status span").forEach(span => {
             }
         })
     })
+})
+function hide_preloader(){
+    setTimeout(function(){
+        document.querySelector(".preloader").style.display = "none";
+        document.querySelector(".main_window").style.display = "block";
+        document.querySelector(".kitty").style.display = "block";  
+    }, 200)
+}
+document.querySelector("textarea").value = "";
+document.querySelector("input[type=text]").value = "";
+document.querySelector("input[type=submit]").addEventListener("click", function(e){
+    e.preventDefault();
+    let tresc = document.querySelector("textarea").value;
+    let podpis = document.querySelector("input[type=text]").value || "Brak podpisu";
+    if(tresc && tresc.length >= 10){
+         Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "portfolio.bot2@gmail.com",
+            Password : "FAD4AB76A6967646B1034DBA059228185FA6",
+            To : 'szymkiewiczmateusz1@gmail.com',
+            From : "portfolio.bot2@gmail.com",
+            Subject : "Email z portfolio",
+            Body : `<h2><strong>Email od : ${podpis}.</strong></h2><h4>${tresc}</h4>`
+          }).then(
+            message => window.location.reload()
+          );
+    }else{
+       document.querySelector("textarea").value = "";
+       document.querySelector("textarea").setAttribute("placeholder","Napisz chociaż 10 znaków!  Wierzę w Ciebie!");
+    }
 })

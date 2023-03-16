@@ -35,7 +35,7 @@ button{
 .main_window{
     overflow: auto;
     height: 4500px;
-    min-height: 100vh;
+    padding-bottom: 10px;
 }
 .title-bar{
     height: 20px;
@@ -306,6 +306,25 @@ input[type=submit]{
 .counter{
     float: left;
 }
+.preloader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.preloader img{
+   height: 200px;
+    width: 200px;
+     position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+::placeholder {
+  color: #e74c3c;
+  opacity: 1;
+}
 @media only screen and (min-width: 1200px) {
     #section_dosw{
         width: 70%;
@@ -355,7 +374,8 @@ input[type=submit]{
 /* Style na urządzenia mobilne */
 @media only screen and (hover: none) and (pointer: coarse){
     .main_window{
-        height: 9700px;
+        height: 9730px;
+        padding-bottom: 20px;
     }
     h1{
         font-size: 4.2rem;
@@ -526,7 +546,7 @@ input[type=submit]{
     padding-bottom: 80px;
     }
     #section_kontakt span{
-        font-size: 42px;
+        font-size: 38px;
     }
     #section_kontakt label{
         font-size: 35px;
@@ -553,5 +573,13 @@ input[type=submit]{
     }
     .copyright{
         font-size: 34px;
+    }
+    .counter{
+        transform: scale(1.5);
+        margin-left: 20px;
+        margin-top: 6px;
+    }
+    .preloader img{
+        transform: translate(-50%, -50%) scale(2);
     }
 }
