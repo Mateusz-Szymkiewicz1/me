@@ -274,7 +274,7 @@ legend{
 #section_kontakt{
     padding-bottom: 50px;
 }
-#section_kontakt label{
+#section_kontakt label, .status_label{
     font-size: 17px;
 }
 .copyright{
@@ -325,6 +325,24 @@ input[type=submit]{
   color: #e74c3c;
   opacity: 1;
 }
+.scroll_to_top{
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+}
+.scroll_to_top i {
+    margin-top: 15px;
+}
+@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.animate__fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}
+@-webkit-keyframes fadeOut{0%{opacity:1}to{opacity:0}}
 @media only screen and (min-width: 1200px) {
     #section_dosw{
         width: 70%;
@@ -551,6 +569,9 @@ input[type=submit]{
     #section_kontakt label{
         font-size: 35px;
     }
+    .status_label{
+        font-size: 32px;
+    }
     textarea{
         margin-bottom: 15px;
         width: 85%;
@@ -581,5 +602,10 @@ input[type=submit]{
     }
     .preloader img{
         transform: translate(-50%, -50%) scale(2);
+    }
+    .scroll_to_top{
+        transform: scale(2);
+        right: 50px;
+        bottom: 50px;
     }
 }

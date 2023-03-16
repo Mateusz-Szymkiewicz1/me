@@ -90,6 +90,21 @@ function hide_preloader(){
         document.querySelector(".preloader").style.display = "none";
         document.querySelector(".main_window").style.display = "block";
         document.querySelector(".kitty").style.display = "block";  
+        let queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let get_status = urlParams.get("status");
+        if(get_status){
+            let komunikat;
+            if(get_status == "OK"){
+                komunikat = "Pomyślnie wysłano!";
+                document.querySelector(".status_label").style.color = "#2ecc71";
+            }else{
+                komunikat = "Wystąpił Błąd";
+                document.querySelector(".status_label").style.color = "#e74c3c";
+            }
+            document.querySelector("#h4_kontakt").scrollIntoView();
+            document.querySelector(".status_label").innerText = " - "+komunikat;
+        }
     }, 200)
 }
 document.querySelector("textarea").value = "";
@@ -108,10 +123,33 @@ document.querySelector("input[type=submit]").addEventListener("click", function(
             Subject : "Email z portfolio",
             Body : `<h2><strong>Email od : ${podpis}.</strong></h2><h4>${tresc}</h4>`
           }).then(
-            message => window.location.reload()
+            message => {
+                let status = "OK";
+                if(message != "OK"){
+                    status = "ERR";
+                }
+                window.location.replace(`index.html?status=${status}`);
+            }
           );
     }else{
        document.querySelector("textarea").value = "";
        document.querySelector("textarea").setAttribute("placeholder","Napisz chociaż 10 znaków!  Wierzę w Ciebie!");
+    }
+})
+document.querySelector(".scroll_to_top").addEventListener("click", function(){
+    window.scrollTo(0,0);
+})
+document.addEventListener("scroll", function(){
+    let scrollTotal = document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    if ((document.documentElement.scrollTop / scrollTotal ) > 0.20 ) {
+        document.querySelector(".scroll_to_top").style.display = "block";
+        document.querySelector(".scroll_to_top").style.animation = "fadeIn 0.5s ease";
+    } else {
+        if(document.querySelector(".scroll_to_top").style.display == "block"){
+            document.querySelector(".scroll_to_top").style.animation = "fadeOut 0.3s ease";
+            setTimeout(function(){
+              document.querySelector(".scroll_to_top").style.display = "none";  
+            }, 250)
+        }
     }
 })
