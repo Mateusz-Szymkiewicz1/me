@@ -34,7 +34,7 @@ button{
 }
 .main_window{
     overflow: auto;
-    height: 5000px;
+    height: 4500px;
     min-height: 100vh;
 }
 .title-bar{
@@ -199,7 +199,7 @@ h4{
   height: 100%;
   position: relative;
 }
-#h4_umiej{
+#h4_umiej, #h4_kontakt{
     clear: both;
     margin-top: 0;
 }
@@ -235,10 +235,10 @@ legend{
     margin-top: 20px;
     max-width: 95%;
 }
-#section_umiej i{
+#section_umiej i, #section_kontakt i{
     font-size: 36px;
 }
-#section_umiej span{
+#section_umiej span, #section_kontakt span{
     font-size: 26px;
     margin-left: 15px;
     line-height: 60px;
@@ -254,6 +254,7 @@ legend{
     padding: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-bottom: 100px;
 }
 .portfolio_wrapper{
     display: flex;
@@ -269,7 +270,41 @@ legend{
     margin-top: 10px;
     height: 260px;
     width: 315px;
+}
+#section_kontakt{
+    padding-bottom: 50px;
+}
+#section_kontakt label{
+    font-size: 17px;
+}
+.copyright{
+    padding-left: 30px;
+    font-size: 20px;
+    float: left;
+    margin-right: 30px;
+}
+textarea{
+    margin-bottom: 15px;
+    width: 60%;
+    min-width: 220px;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+}
+input[type=text]{
+        padding: 20px;
+    font-size: 16px;
+    padding-left: 10px;
+
+}
+input[type=submit]{
+    margin-top: 25px;
+    transform: scale(1.25);
+    margin-left: 7px;
     cursor: pointer;
+}
+.counter{
+    float: left;
 }
 @media only screen and (min-width: 1200px) {
     #section_dosw{
@@ -280,14 +315,27 @@ legend{
         text-align: center;
     }
 }
+@media only screen and (max-width: 1310px) {
+    .main_window{
+        height: 4900px;
+    }
+}
 @media only screen and (max-width: 590px) {
     #section_umiej span{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 670px) {
+    #section_kontakt span{
         font-size: 20px;
     }
 }
 @media only screen and (max-width: 900px) {
     #section_portfolio{
         width: 350px;
+    }
+    .main_window{
+     height: 5700px;
     }
 }
 @media only screen and (max-width: 585px) {
@@ -306,8 +354,8 @@ legend{
 }
 /* Style na urządzenia mobilne */
 @media only screen and (hover: none) and (pointer: coarse){
-    .window{
-        height: 9000px;
+    .main_window{
+        height: 9700px;
     }
     h1{
         font-size: 4.2rem;
@@ -372,7 +420,7 @@ legend{
     h4{
         font-size: 35px;
     }
-    #h4_dosw, #h4_portfolio{
+    #h4_dosw, #h4_portfolio, #h4_kontakt{
         font-size: 48px;
     }
     .section{
@@ -436,10 +484,10 @@ legend{
     legend{
         font-size: 42px;
     }
-    #section_umiej i{
+    #section_umiej i, #section_kontakt i{
         font-size: 80px;
     }
-    #section_umiej span{
+    #section_umiej span,  #section_kontakt span{
         font-size: 46px;
         margin-left: 30px;
         line-height: 120px;
@@ -473,5 +521,37 @@ legend{
         height: 500px;
         width: 570px;
         cursor: pointer;
+    }
+    #section_kontakt{
+    padding-bottom: 80px;
+    }
+    #section_kontakt span{
+        font-size: 42px;
+    }
+    #section_kontakt label{
+        font-size: 35px;
+    }
+    textarea{
+        margin-bottom: 15px;
+        width: 85%;
+        min-width: 220px;
+        resize: none;
+        padding: 20px;
+        font-size: 30px;
+    }
+    input[type=text]{
+        padding: 30px;
+        font-size: 26px;
+        padding-left: 17px;
+
+    }
+    input[type=submit]{
+        margin-top: 45px;
+        transform: scale(2.3);
+        margin-left: 46px;
+        cursor: pointer;
+    }
+    .copyright{
+        font-size: 34px;
     }
 }
