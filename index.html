@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mateusz Szymkiewicz</title>
-     <link rel="icon" type="image/x-icon" href="res/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="res/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/98.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/e603884ebd.js" crossorigin="anonymous"></script>
@@ -13,9 +13,13 @@
     <script src="index.js" defer></script>
 </head>
 <body onload="hide_preloader()">
+   
+    <!-- Preloader -->
     <div class="preloader">
         <img src="res/loader.gif">
     </div>
+    
+    <!-- Głowne okno -->
     <div class="window main_window" style="display: none;">
         <div class="title-bar">
             <div class="title-bar-text"><i class="fa fa-file">&nbsp;&nbsp;</i>index.html</div>
@@ -24,13 +28,23 @@
                 <button aria-label="Minimize" id="btn_min"></button>
             </div>
         </div>
-        <fieldset class="nav">
+        <fieldset class="nav"> <!-- Nawigacja -->
             <ul>
-                <a href="#h4_omnie"><li id="nav_omnie"><span style="text-decoration:underline;">O</span> mnie</li></a>
-                <a href="#h4_dosw"><li id="nav_dosw"><span style="text-decoration:underline;">D</span>oświadczenie</li></a>
-                <a href="#h4_umiej"><li id="nav_umiej"><span style="text-decoration:underline;">U</span>miejętności</li></a>
-                <a href="#h4_portfolio"><li id="nav_portfolio"><span style="text-decoration:underline;">P</span>ortfolio</li></a>
-                <a href="#h4_kontakt"><li id="nav_kontakt"><span style="text-decoration:underline;">K</span>ontakt</li></a>
+                <a href="#h4_omnie">
+                    <li id="nav_omnie"><span style="text-decoration:underline;">O</span> mnie</li>
+                </a>
+                <a href="#h4_dosw">
+                    <li id="nav_dosw"><span style="text-decoration:underline;">D</span>oświadczenie</li>
+                </a>
+                <a href="#h4_umiej">
+                    <li id="nav_umiej"><span style="text-decoration:underline;">U</span>miejętności</li>
+                </a>
+                <a href="#h4_portfolio">
+                    <li id="nav_portfolio"><span style="text-decoration:underline;">P</span>ortfolio</li>
+                </a>
+                <a href="#h4_kontakt">
+                    <li id="nav_kontakt"><span style="text-decoration:underline;">K</span>ontakt</li>
+                </a>
             </ul>
         </fieldset>
         <div class="window-body">
@@ -38,106 +52,111 @@
             <h3 class="h3_desc">Lorem Ipsum dolor sit amet</h3>
             <i class="fa fa-code title_icon"></i>
             <h4 id="h4_omnie">O mnie</h4>
-            <div class="section">
+            <div class="section"> <!-- O mnie -->
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pulvinar aliquam lectus, eu aliquam <a href="#" style="color: #969eff;">magna facilisis</a> in. Pellentesque pulvinar vehicula lorem quis cursus. Cras convallis tristique aliquet. Quisque vestibulum felis ac elit fermentum aliquam. Maecenas elementum orci vitae nisi maximus tincidunt. Sed luctus ipsum at risus faucibus sodales.
             </div>
             <h4 class="right" id="h4_dosw">Doświadczenie</h4>
-            <div class="section right" id="section_dosw">
-                 <section class="time-line-box">
-            <div class="swiper-container text-center"> 
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">2019-2020</span></div>
-                      <div class="status"><span data-number="0" style="color: #747cdd;cursor:pointer;">Lorem Ipsum</span></div>
+            <div class="section right" id="section_dosw"> <!-- Doświadczenie -->
+                <section class="time-line-box">
+                    <div class="swiper-container text-center">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="timestamp"><span class="date">2019-2020</span></div>
+                                <div class="status"><span data-number="0" style="color: #747cdd;cursor:pointer;">Lorem Ipsum</span></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timestamp"><span class="date">2020-2021</span></div>
+                                <div class="status"><span data-number="1" style="color: #747cdd;cursor:pointer;">Lorem Ipsum</span></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timestamp"><span class="date">2021-2021</span></div>
+                                <div class="status"><span data-number="2" style="color: #747cdd;cursor:pointer;">Lorem Ipsum</span></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="timestamp"><span class="date">2022-Teraz</span></div>
+                                <div class="status"><span data-number="3" style="color: #747cdd;cursor:pointer;">Lorem Ipsum</span></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">2020-2021</span></div>
-                      <div class="status"><span data-number="1" style="color: #747cdd;cursor:pointer;">Lorem Ipsum</span></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">2021-2021</span></div>
-                      <div class="status"><span data-number="2" style="color: #747cdd;cursor:pointer;">Lorem Ipsum</span></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">2022-Teraz</span></div>
-                      <div class="status"><span data-number="3" style="color: #747cdd;cursor:pointer;">Lorem Ipsum</span></div>
-                    </div>
+                </section>
+            </div>
+            <h4 id="h4_umiej">Umiejętności</h4>
+            <div class="section" id="section_umiej"> <!-- Umiejętności -->
+                <fieldset>
+                    <legend>Frontend</legend>
+                    <i class="fa-brands fa-html5"></i><span>HTML &nbsp; (Senior)</span><br />
+                    <i class="fa-brands fa-css3-alt"></i><span>CSS &nbsp; (Intermediate)</span><br />
+                    <i class="fa-brands fa-square-js"></i><span>JS&nbsp;&nbsp;(Intermediate)</span><br />
+                    <i class="fa-brands fa-react"></i><span>React&nbsp;&nbsp;(Junior)</span><br />
+                    <span class="span_umiej_no_icon">Znajomość&nbsp;&nbsp;jQuery</span><br />
+                </fieldset>
+                <fieldset>
+                    <legend>Backend</legend>
+                    <i class="fa-brands fa-php"></i><span>PHP&nbsp;&nbsp;(Intermediate)</span><br />
+                    <i class="fa fa-database"></i><span>MySQL&nbsp;&nbsp;(Intermediate)</span><br />
+                </fieldset>
+                <fieldset>
+                    <legend>Pozostałe</legend>
+                    <i class="fa fa-language"></i><span>Angielski&nbsp;&nbsp;(C1)</span><br />
+                    <i class="fa-brands fa-github"></i><span>Github</span><br />
+                    <i class="fa-brands fa-java"></i><span>Java&nbsp;&nbsp;(Junior)</span><br />
+                    <i class="fa-brands fa-python"></i><span>Python&nbsp;&nbsp;(Junior)</span><br />
+                </fieldset>
+            </div>
+            <h4 class="right" id="h4_portfolio">Portfolio</h4>
+            <div class="section right" id="section_portfolio"> <!-- Portfolio -->
+                <div class="portfolio_wrapper">
+                    <fieldset>
+                        <legend>Świętokrzyski Geoguessr</legend>
+                        <a href="https://github.com/Mateusz-Szymkiewicz1/swietokrzyski-geoguessr" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Meow Clicker</legend>
+                        <a href="https://mateusz-szymkiewicz1.github.io/meow_clicker/" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Pierwszak Symulator</legend>
+                        <a href="https://github.com/Mateusz-Szymkiewicz1/pierwszak_symulator" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Kazachstan.net</legend>
+                        <a href="https://github.com/Mateusz-Szymkiewicz1/kazachstan.net" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Potato Service</legend>
+                        <a href="https://github.com/Mateusz-Szymkiewicz1/potato_service" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
+                    </fieldset>
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
-       </section>
-            </div>
-        <h4 id="h4_umiej">Umiejętności</h4>
-        <div class="section" id="section_umiej">
-            <fieldset>
-                <legend>Frontend</legend>
-                <i class="fa-brands fa-html5"></i><span>HTML &nbsp; (Senior)</span><br/>
-                <i class="fa-brands fa-css3-alt"></i><span>CSS &nbsp; (Intermediate)</span><br/>
-                <i class="fa-brands fa-square-js"></i><span>JS&nbsp;&nbsp;(Intermediate)</span><br/>
-                <i class="fa-brands fa-react"></i><span>React&nbsp;&nbsp;(Junior)</span><br/>
-                <span class="span_umiej_no_icon">Znajomość&nbsp;&nbsp;jQuery</span><br/>
-            </fieldset>
-            <fieldset>
-                <legend>Backend</legend>
-                <i class="fa-brands fa-php"></i><span>PHP&nbsp;&nbsp;(Intermediate)</span><br/>
-                <i class="fa fa-database"></i><span>MySQL&nbsp;&nbsp;(Intermediate)</span><br/>
-            </fieldset>
-            <fieldset>
-                <legend>Pozostałe</legend>
-                <i class="fa fa-language"></i><span>Angielski&nbsp;&nbsp;(C1)</span><br/>
-                <i class="fa-brands fa-github"></i><span>Github</span><br/>
-                <i class="fa-brands fa-java"></i><span>Java&nbsp;&nbsp;(Junior)</span><br/>
-                <i class="fa-brands fa-python"></i><span>Python&nbsp;&nbsp;(Junior)</span><br/>
-            </fieldset>
-        </div>
-        <h4 class="right" id="h4_portfolio">Portfolio</h4>
-        <div class="section right" id="section_portfolio">
-            <div class="portfolio_wrapper">
-                <fieldset>
-                    <legend>Świętokrzyski Geoguessr</legend>
-                    <a href="https://github.com/Mateusz-Szymkiewicz1/swietokrzyski-geoguessr" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
-                </fieldset>
-                <fieldset>
-                    <legend>Meow Clicker</legend>
-                    <a href="https://mateusz-szymkiewicz1.github.io/meow_clicker/" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
-                </fieldset>
-                <fieldset>
-                    <legend>Pierwszak Symulator</legend>
-                    <a href="https://github.com/Mateusz-Szymkiewicz1/pierwszak_symulator" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
-                </fieldset>
-                <fieldset>
-                    <legend>Kazachstan.net</legend>
-                    <a href="https://github.com/Mateusz-Szymkiewicz1/kazachstan.net" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
-                </fieldset>
-                <fieldset>
-                    <legend>Potato Service</legend>
-                    <a href="https://github.com/Mateusz-Szymkiewicz1/potato_service" target="_blank"><img src="res/placeholder.png" draggable="false"></a>
-                </fieldset>
-            </div>
-        </div>
-        <h4 id="h4_kontakt">Kontakt</h4>
-        <div class="section" id="section_kontakt">
-            <i class="fa fa-envelope"></i><span> szymkiewiczmateusz1@gmail.com</span><br/>
-            <i class="fa-brands fa-github"></i><a href="https://github.com/Mateusz-Szymkiewicz1" target="_blank" style="color: #969eff;text-decoration: underline;"><span> Mateusz-Szymkiewicz1</span></a><br/>
-            <i class="fa-brands fa-linkedin"></i><a href="#" style="color: #969eff;text-decoration: underline;"><span> Lorem Ipsum</span></a><br/>
-            <span class="span_umiej_no_icon">lub</span><br/><br/>
-            <form method="post">
-                <label>Wiadomość&nbsp;&nbsp;<b class="status_label"></b></label><br/>
-                <textarea id="" cols="30" rows="8" max="1500"></textarea><br/>
-                <label>Podpis</label><br/>
-                <input type="text" max="50"><br/>
-                <input type="submit" value="Wyślij">
-            </form>
-        </div><br/><br/><br/><br/><br/>
-        <span class="copyright">Mateusz Szymkiewicz 2023 &#169;</span><div class="counter"><img src='https://www.free-website-hit-counter.com/c.php?d=6&id=147499&s=16' border='0' draggable="false"></div> 
+            <h4 id="h4_kontakt">Kontakt</h4>
+            <div class="section" id="section_kontakt"> <!-- Kontakt -->
+                <i class="fa fa-envelope"></i><span> szymkiewiczmateusz1@gmail.com</span><br />
+                <i class="fa-brands fa-github"></i><a href="https://github.com/Mateusz-Szymkiewicz1" target="_blank" style="color: #969eff;text-decoration: underline;"><span> Mateusz-Szymkiewicz1</span></a><br />
+                <i class="fa-brands fa-linkedin"></i><a href="#" style="color: #969eff;text-decoration: underline;"><span> Lorem Ipsum</span></a><br />
+                <span class="span_umiej_no_icon">lub</span><br /><br />
+                <form method="post">
+                    <label>Wiadomość&nbsp;&nbsp;<b class="status_label"></b></label><br />
+                    <textarea id="" cols="30" rows="8" max="1500"></textarea><br />
+                    <label>Podpis</label><br />
+                    <input type="text" max="50"><br />
+                    <input type="submit" value="Wyślij">
+                </form>
+            </div><br /><br /><br /><br /><br />
+            <span class="copyright">Mateusz Szymkiewicz 2023 &#169;</span>
+            <div class="counter"><img src='https://www.free-website-hit-counter.com/c.php?d=6&id=147499&s=16' border='0' draggable="false"></div>
         </div>
     </div>
+    
+    <!-- Okno po zminimalizowaniu -->
     <div class="min_window title-bar" style="display: none;">
-         <div class="title-bar-text"><i class="fa fa-file">&nbsp;&nbsp;</i><span style="text-decoration:underline;">i</span>ndex.html</div>
-            <div class="title-bar-controls">
-                <button aria-label="Maximize" id="btn_max"></button>
-            </div>
+        <div class="title-bar-text"><i class="fa fa-file">&nbsp;&nbsp;</i><span style="text-decoration:underline;">i</span>ndex.html</div>
+        <div class="title-bar-controls">
+            <button aria-label="Maximize" id="btn_max"></button>
+        </div>
     </div>
+    
+    <!-- Okno z kotkiem -->
     <div class="window kitty" style="display: none;">
         <div class="title-bar">
             <div class="title-bar-text"><i class="fa fa-image">&nbsp;&nbsp;</i>kitty.jpg</div>
@@ -150,6 +169,8 @@
             <img src="res/kitty.jpg" alt="kotek" draggable="false">
         </div>
     </div>
+    
+    <!-- Przycisk przewijania do samej góry -->
     <div class="scroll_to_top" style="display: none;"><i class="fa fa-arrow-up"></i></div>
 </body>
 </html>

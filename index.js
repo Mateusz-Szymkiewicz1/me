@@ -6,7 +6,6 @@ document.querySelector("#btn_max").addEventListener("click", function () {
     document.querySelector(".main_window").style.display = "block";
     document.querySelector(".min_window").style.display = "none";
 })
-
 function responsivity(x) {
     if (x.matches) {
         document.querySelector("#nav_kontakt").innerHTML = '<i class="fa fa-envelope"></i>';
@@ -138,6 +137,7 @@ document.querySelector("input[type=submit]").addEventListener("click", function(
 })
 document.querySelector(".scroll_to_top").addEventListener("click", function(){
     window.scrollTo(0,0);
+    document.querySelector(".main_window").scrollTo(0,0);
 })
 document.addEventListener("scroll", function(){
     let scrollTotal = document.documentElement.scrollHeight-document.documentElement.clientHeight;
