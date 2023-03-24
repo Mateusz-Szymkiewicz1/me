@@ -34,8 +34,7 @@ button{
 }
 .main_window{
     overflow: auto;
-    height: 4500px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 .title-bar{
     height: 20px;
@@ -303,9 +302,6 @@ input[type=submit]{
     margin-left: 7px;
     cursor: pointer;
 }
-.counter{
-    float: left;
-}
 .preloader{
     position: absolute;
     top: 0;
@@ -353,11 +349,6 @@ input[type=submit]{
         text-align: center;
     }
 }
-@media only screen and (max-width: 1310px) {
-    .main_window{
-        height: 4900px;
-    }
-}
 @media only screen and (max-width: 590px) {
     #section_umiej span{
         font-size: 20px;
@@ -371,9 +362,6 @@ input[type=submit]{
 @media only screen and (max-width: 900px) {
     #section_portfolio{
         width: 350px;
-    }
-    .main_window{
-     height: 5700px;
     }
 }
 @media only screen and (max-width: 585px) {
@@ -393,8 +381,7 @@ input[type=submit]{
 /* Style na urządzenia mobilne */
 @media only screen and (hover: none) and (pointer: coarse){
     .main_window{
-        height: 9730px;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
     h1{
         font-size: 4.2rem;
@@ -595,11 +582,6 @@ input[type=submit]{
     }
     .copyright{
         font-size: 34px;
-    }
-    .counter{
-        transform: scale(1.5);
-        margin-left: 20px;
-        margin-top: 6px;
     }
     .preloader img{
         transform: translate(-50%, -50%) scale(2);
