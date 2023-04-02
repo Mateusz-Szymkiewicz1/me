@@ -74,7 +74,6 @@ document.querySelectorAll(".status span").forEach(span => {
             </div>`;
         div.style.cssText = `height: 280px;width: 380px;position: fixed;top: ${window.innerHeight/2}px;left: ${window.innerWidth/2}px;margin-top: -140px;margin-left: -190px;`;
         document.body.appendChild(div);
-        $(".window_job").draggable();
         document.querySelector(".window_job button").addEventListener("click",function(){
             document.querySelector(".window_job").style.display = "none";
             document.querySelector(".window_job").remove();
@@ -82,6 +81,7 @@ document.querySelectorAll(".status span").forEach(span => {
                 document.querySelector(".window_job").removeAttribute("class");
             }
         })
+        $(".window_job").draggable();
     })
 })
 function hide_preloader(){
