@@ -22,7 +22,7 @@ h1{
     margin-top: 120px;
     font-weight: 600;
 }
-.h3_desc{
+.h2_desc{
     text-align: center;
     font-size: 1.65rem;
     margin-top: 10px;
@@ -57,7 +57,6 @@ button{
 .nav ul li {
     float: left;
     margin-right: 12px;
-    padding:5px;
     border: 1px solid transparent;
 }
 #nav_kontakt{
@@ -67,6 +66,10 @@ button{
     border: 1px solid #222;
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
+}
+.nav li a {
+  display: block;
+  padding: 5px;
 }
 a{
     color: #000;
@@ -120,10 +123,11 @@ a:focus{
     display: block !important;
     text-align: center;
 }
-h4{
+h3{
     margin-left: 30px;
     margin-top: 160px;
     padding-top: 40px;
+    font-size: 28px;
 }
 .right{
     float: right;
@@ -198,7 +202,7 @@ h4{
   height: 100%;
   position: relative;
 }
-#h4_umiej, #h4_kontakt{
+#h3_umiej, #h3_kontakt{
     clear: both;
     margin-top: 0;
 }
@@ -387,7 +391,7 @@ input[type=submit]{
         font-size: 4.2rem;
         margin-top: 150px;
     }
-    .h3_desc{
+    .h2_desc{
         font-size: 2.5rem;
         margin: 25px;
         margin-bottom: 35px;
@@ -440,13 +444,13 @@ input[type=submit]{
         border-width: 3px;
         margin-top: 15px;
     }
-    #h4_omnie{
+    #h3_omnie{
         margin-top: 240px;
     }
-    h4{
+    h3{
         font-size: 35px;
     }
-    #h4_dosw, #h4_portfolio, #h4_kontakt{
+    #h3_dosw, #h3_portfolio, #h3_kontakt{
         font-size: 48px;
     }
     .section{
