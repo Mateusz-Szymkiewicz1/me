@@ -65,7 +65,7 @@ document.querySelectorAll(".status span").forEach(span => {
                 </div>
             </div>
             <div class="window-body">
-                <h3>${job_obj.company}</h3>
+                <h4>${job_obj.company}</h4>
                 <h5>${job_obj.job}</h5>
                 <h6>${job_obj.time}</h6>
                 <p>${job_obj.desc}</p>
@@ -79,7 +79,27 @@ document.querySelectorAll(".status span").forEach(span => {
                 document.querySelector(".window_job").removeAttribute("class");
             }
         })
-        $(".window_job").draggable();
+      let x = 0;
+      let y = 0;
+      const mouseDownHandler = function (e) {
+          x = e.clientX;
+          y = e.clientY;
+          document.addEventListener('mousemove', mouseMoveHandler);
+          document.addEventListener('mouseup', mouseUpHandler);
+      };
+      const mouseMoveHandler = function (e) {
+          const dx = e.clientX - x;
+          const dy = e.clientY - y;
+          div.style.top = `${parseInt(div.style.top.slice(0, -2)) + dy}px`;
+          div.style.left = `${parseInt(div.style.left.slice(0, -2)) + dx}px`;
+          x = e.clientX;
+          y = e.clientY;
+      };
+      const mouseUpHandler = function () {
+          document.removeEventListener('mousemove', mouseMoveHandler);
+          document.removeEventListener('mouseup', mouseUpHandler);
+      };
+      div.addEventListener('mousedown', mouseDownHandler);
     })
 })
 function hide_preloader(){
