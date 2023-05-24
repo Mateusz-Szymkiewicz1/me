@@ -26,10 +26,10 @@ responsivity(x);
 x.addListener(responsivity);
 window.work_descriptions = [
     {
-        company: "Lorem Ipsum",
-        job: "Senior Java Developer",
-        desc: "Lorem Ipsum Dolor Sit Amet Bla Bla Bla Ipsum Lorem Amet Sit",
-        time: "2021-2022"
+        company: "Karol Walasek Informatyka",
+        job: "Praktyki Zawodowe",
+        desc: "HTML, CSS, JavaScript, Vue.js, Nuxt.js",
+        time: "03-04 2023"
     },
     {
         company: "Lorem Ipsum2",
@@ -171,3 +171,5 @@ document.addEventListener("scroll", function(){
         }
     }
 })
+let rok = new Date().getFullYear();
+document.querySelector('.copyright').innerHTML = `Mateusz Szymkiewicz ${rok} &#169;`;
