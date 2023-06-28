@@ -21,6 +21,7 @@ h1{
     margin: 0;
     margin-top: 120px;
     font-weight: 600;
+  padding: 0 40px 10px 40px;
 }
 .h2_desc{
     text-align: center;
@@ -370,238 +371,45 @@ input[type=submit]{
 }
 @media only screen and (max-width: 585px) {
     #section_portfolio{
-        width: 285px;
+        width: 265px;
     }
     #section_portfolio fieldset{
         height: 250px;
-        width: 260px;
     }
     #section_portfolio img{
         margin-top: 10px;
         height: 210px;
-        width: 255px;
+        width: 240px;
     }
+  .span_email, #section_kontakt .fa-envelope{
+   display: block;
+    margin: auto;
+    text-align: center;
+  }
+   #section_kontakt .fa-envelope{
+    margin-top: 20px;
+  }
 }
-/* Style na urządzenia mobilne */
-@media only screen and (hover: none) and (pointer: coarse){
-    .main_window{
-        padding-bottom: 50px;
-    }
-    h1{
-        font-size: 4.2rem;
-        margin-top: 150px;
-    }
-    .h2_desc{
-        font-size: 2.5rem;
-        margin: 25px;
-        margin-bottom: 35px;
-    }
-    .title_icon{
-        font-size: 40px;
-    }
-    .title-bar{
-        height: 50px;
-        font-size: 24px;
-        padding-left: 15px;
-    }
-    .title-bar button{
-        transform: scale(2.5);
-        margin-right: 35px !important;
-    }
-    #btn_min{
-        margin-right: 20px !important;
-    }
-    .nav{
-        padding: 2px;
-        padding-top: 10px;
-        padding-bottom: 0;
-        height: 65px;
-        border-width: thick;
-    }
-    .nav li{
-        font-size: 35px;
-    }
-    .min_window{
-        width: 72vw;
-        height: 80px;
-        font-size: 30px;
-        padding-left: 25px;
-    }
-    .min_window button{
-        transform: scale(3);
-        margin-right: 40px;
-    }
-    .kitty{
-       height: 500px;
-        width: 500px;
-        margin-top: -250px;
-    margin-left: -250px;
-    }
-    .kitty img{
-        height: 400px;
-        width: 400px;
-        border-width: 3px;
-        margin-top: 15px;
-    }
-    #h3_omnie{
-        margin-top: 240px;
-    }
-    h3{
-        font-size: 35px;
-    }
-    #h3_dosw, #h3_portfolio, #h3_kontakt{
-        font-size: 48px;
-    }
-    .section{
-        width: 85%;
-        font-size: 26px;
-        line-height: 40px;
-        padding: 25px;
-    }
-    #section_dosw{
-        padding-top: 130px;
-        height: 240px;
-    }
-    .swiper-container{
-        margin-right: -150px;
-    }
-    .time-line-box{
-        transform: scale(2);
-    }
-    .window_job{
-        height: 640px !important;
-        width: 800px !important;
-        margin-top: -320px !important;
-        margin-left: -400px !important;
-    }
-    .window_job .title-bar{
-        height: 64px;
-        font-size: 32px;
-        padding-left: 20px;
-    }
-    .window_job button{
-        transform: scale(2.85);
-    }
-    .window_job .window-body{
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    .window_job h4{
-        margin-top: 60px;
-        font-size: 70px;
-        margin-bottom: 20px;
-    }
-    .window_job h5{
-        font-size: 40px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .window_job h6{
-        font-size: 33px;
-        margin-top: 0px;
-    }
-    .window_job p{
-        font-size: 52px;
-        line-height: 75px;
-    }
-    #section_umiej fieldset{
-        border-image-width: 7px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 40px;
-    }
-    legend{
-        font-size: 42px;
-    }
-    #section_umiej i, #section_kontakt i{
-        font-size: 80px;
-    }
-    #section_umiej span,  #section_kontakt span{
-        font-size: 46px;
-        margin-left: 30px;
-        line-height: 120px;
-    }
-    .span_umiej_no_icon{
-        margin-left: 10px !important;
-        padding-left: 0;
-        font-size: 38px !important;
-    }
-    #section_portfolio{
-        padding: 40px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 100px;
-    }
-    .portfolio_wrapper{
-        justify-content: center;
-    }
-    .portfolio_wrapper legend{
-        margin-left: 20px;
-    }
-    #section_portfolio fieldset{
-        border-image-width: 7px;
-        height: 600px;
-        width: 620px;
-        margin-top: 70px;
-    }
-    #section_portfolio img{
-        margin-top: 30px;
-        margin-left: 20px;
-        height: 500px;
-        width: 570px;
-        cursor: pointer;
-    }
-    #section_kontakt{
-    padding-bottom: 80px;
-    }
-    #section_kontakt span{
-        font-size: 38px;
-    }
-    #section_kontakt label{
-        font-size: 35px;
-    }
-    .status_label{
-        font-size: 32px;
-    }
-    textarea{
-        margin-bottom: 15px;
-        width: 85%;
-        min-width: 220px;
-        resize: none;
-        padding: 20px;
-        font-size: 30px;
-    }
-    input[type=text]{
-        padding: 30px;
-        font-size: 26px;
-        padding-left: 17px;
-
-    }
-    input[type=submit]{
-        margin-top: 45px;
-        transform: scale(2.3);
-        margin-left: 46px;
-        cursor: pointer;
-    }
-    .copyright{
-        font-size: 34px;
-    }
-    .preloader img{
-        transform: translate(-50%, -50%) scale(2);
-    }
-    .scroll_to_top{
-        transform: scale(2);
-        right: 50px;
-        bottom: 50px;
-    }
-  .fa-envelope{
-    display: none !important;
+@media screen and (max-width: 500px) {
+  h1{
+    padding: 0;
+  }
+  body{
+    padding: 8px;
+  }
+  h3{
+    margin-left: 10px;
+  }
+  .right{
+    margin-right: 10px;
+  }
+  .section{
+    margin-left: 10px;
+  }
+  #section_kontakt span{
+    font-size: 17px;
   }
   .span_email{
-    font-size: 34px !important;
-    display: block !important;
-    margin: 0 !important;
-    margin-top: 20px !important;
-    text-align: center;
+    margin-left: 0 !important;
   }
 }
