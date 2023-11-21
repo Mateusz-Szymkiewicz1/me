@@ -28,14 +28,14 @@ window.work_descriptions = [
     {
         company: "Karol Walasek Informatyka",
         job: "Praktyki Zawodowe",
-        desc: "HTML, CSS, JavaScript, Vue.js, Nuxt.js",
+        desc: "Nauka HTML, CSS, JavaScript, Vue.js, Nuxt.js",
         time: "03-04 2023"
     },
     {
-        company: "Lorem Ipsum2",
-        job: "Junior Java Developer",
-        desc: "Lorem Ipsum Dolor Sit Amet Bla Bla Bla Ipsum Lorem Amet Sit",
-        time: "2022-2023"
+        company: "Sopchy",
+        job: "Praktyki Zawodowe",
+        desc: "Tworzenie aplikacji internetowych w HTML, CSS, JS oraz Wordpress",
+        time: "10-11 2023"
     },
     {
         company: "Lorem Ipsum3",

@@ -207,6 +207,9 @@ h3{
     clear: both;
     margin-top: 0;
 }
+.window_job{
+    max-width: 90%;
+}
 .window_job .window-body{
     padding-left: 15px;
     padding-right: 15px;
@@ -352,6 +355,11 @@ input[type=submit]{
     }
     .time-line-box{
         text-align: center;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .window_job{
+        margin-left: -165px !important;
     }
 }
 @media only screen and (max-width: 590px) {
