@@ -28,35 +28,29 @@ window.work_descriptions = [
     {
         company: "Karol Walasek Informatyka",
         job: "Praktyki Zawodowe",
-        desc: "Nauka HTML, CSS, JavaScript, Vue.js, Nuxt.js",
+        desc: "Nauka oraz szkolenie z technologii HTML, CSS, JS, Vue.js, Nuxt.js, SASS",
         time: "03-04 2023"
+    },
+    {
+        company: "Egzamin INF.03",
+        job: "Egzamin zawodowy",
+        desc: "Zdana kwalifikacja INF.03 (Tworzenie i administrowanie stronami internetowymi oraz bazami danych). Teoria - 98.5%, Praktyka - 100%",
+        time: "06 2023"
     },
     {
         company: "Sopchy",
         job: "Praktyki Zawodowe",
-        desc: "Tworzenie aplikacji internetowych w HTML, CSS, JS oraz Wordpress",
+        desc: "Tworzenie i projektowanie aplikacji internetowych w HTML, CSS, JS oraz Wordpress dla kientów. Przygotowywanie grafik do wykorzystania na stronach.",
         time: "10-11 2023"
     },
-    {
-        company: "Lorem Ipsum3",
-        job: "Senior PHP Developer",
-        desc: "Lorem Ipsum Dolor Sit Amet Bla Bla Bla Ipsum Lorem Amet Sit",
-        time: "2024-2025"
-    },
-    {
-        company: "Lorem Ipsum4",
-        job: "Developer",
-        desc: "Lorem Ipsum Dolor Sit Amet Bla Bla Bla Ipsum Lorem Amet Sit",
-        time: "2026-2027"
-    }
 ]
 document.querySelectorAll(".status span").forEach(span => {
     span.addEventListener("click", function (e) {
         if(document.querySelector(".window_job")){
             document.querySelector(".window_job").remove();
         }
-        let job_obj = window.work_descriptions[span.dataset.number];
-        let div = document.createElement("div");
+        const job_obj = window.work_descriptions[span.dataset.number];
+        const div = document.createElement("div");
         div.className = "window window_job";
         div.innerHTML = `<div class="title-bar">
                 <div class="title-bar-text"><i class="fa fa-user-tie">&nbsp;&nbsp;</i>job.txt</div>
@@ -70,14 +64,10 @@ document.querySelectorAll(".status span").forEach(span => {
                 <h6>${job_obj.time}</h6>
                 <p>${job_obj.desc}</p>
             </div>`;
-        div.style.cssText = `height: 280px;width: 380px;position: fixed;top: ${window.innerHeight/2}px;left: ${window.innerWidth/2}px;margin-top: -140px;margin-left: -190px;`;
+        div.style.cssText = `width: 380px;position: fixed;top: ${window.innerHeight/2}px;left: ${window.innerWidth/2}px;margin-top: -140px;margin-left: -190px;`;
         document.body.appendChild(div);
         document.querySelector(".window_job button").addEventListener("click",function(){
-            document.querySelector(".window_job").style.display = "none";
             document.querySelector(".window_job").remove();
-            if(document.querySelector(".window_job")){
-                document.querySelector(".window_job").removeAttribute("class");
-            }
         })
       let x = 0;
       let y = 0;

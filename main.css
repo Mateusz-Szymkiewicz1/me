@@ -189,6 +189,7 @@ h3{
 .swiper-container {
   width: 95%; 
   margin: auto;
+  text-align: right;
 }
 .swiper-wrapper{
   display: inline-flex;
@@ -232,6 +233,7 @@ h3{
 }
 .window_job p{
     font-size: 23px;
+    line-height: 36px;
 }
 legend{
     background: transparent;
