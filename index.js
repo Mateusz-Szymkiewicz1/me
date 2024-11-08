@@ -97,21 +97,6 @@ function hide_preloader(){
         document.querySelector(".preloader").style.display = "none";
         document.querySelector(".main_window").style.display = "block";
         document.querySelector(".kitty").style.display = "block";  
-        let queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        let get_status = urlParams.get("status");
-        if(get_status){
-            let komunikat;
-            if(get_status == "OK"){
-                komunikat = "Pomyślnie wysłano!";
-                document.querySelector(".status_label").style.color = "#2ecc71";
-            }else{
-                komunikat = "Wystąpił Błąd";
-                document.querySelector(".status_label").style.color = "#e74c3c";
-            }
-            document.querySelector("#h4_kontakt").scrollIntoView();
-            document.querySelector(".status_label").innerText = " - "+komunikat;
-        }
     }, 200)
 }
 document.querySelector("textarea").value = "";
@@ -131,11 +116,18 @@ document.querySelector("input[type=submit]").addEventListener("click", function(
             Body : `<h2><strong>Email od : ${podpis}.</strong></h2><h4>${tresc}</h4>`
           }).then(
             message => {
-                let status = "OK";
-                if(message != "OK"){
-                    status = "ERR";
+                let komunikat;
+                if(message == "OK"){
+                    komunikat = "Pomyślnie wysłano!";
+                    document.querySelector(".status_label").style.color = "#2ecc71";
+                }else{
+                    komunikat = "Wystąpił Błąd";
+                    document.querySelector(".status_label").style.color = "#e74c3c";
                 }
-                window.location.replace(`index.html?status=${status}`);
+                document.querySelector("#h3_kontakt").scrollIntoView();
+                document.querySelector(".status_label").innerText = " - "+komunikat;
+                document.querySelector("input").value = ""
+                document.querySelector("textarea").value = ""
             }
           );
     }else{
