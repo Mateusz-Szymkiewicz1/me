@@ -237,6 +237,7 @@ h3{
 }
 legend{
     background: transparent;
+    font-size: inherit;
 }
 #section_umiej fieldset{
     padding: 20px;
