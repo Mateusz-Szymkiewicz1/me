@@ -377,6 +377,9 @@ input[type=submit]{
         width: 350px;
     }
 }
+.links i {
+    color: #000 !important;
+}
 @media only screen and (max-width: 585px) {
     #section_portfolio{
         width: 265px;
@@ -389,13 +392,20 @@ input[type=submit]{
         height: 210px;
         width: 240px;
     }
-  .span_email, #section_kontakt .fa-envelope{
-   display: block;
-    margin: auto;
-    text-align: center;
+  .span_email, .span_github{
+    display: none;
   }
-   #section_kontakt .fa-envelope{
-    margin-top: 20px;
+  .links{
+    display: flex;
+    justify-content: space-between;
+  }
+  .links i {
+    font-size: 50px !important;
+    margin: 15px 0;
+    color: #636bcc !important;
+  }
+   #section_kontakt{
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -417,7 +427,7 @@ input[type=submit]{
   #section_kontakt span{
     font-size: 17px;
   }
-  .span_email{
+  .span_email, .span_github{
     margin-left: 0 !important;
     font-size: 15px !important;
   }
@@ -443,4 +453,7 @@ input[type=submit]{
 }
 .title-bar-controls button[aria-label=Help]{
     background-position: top 2px left 4px;
+}
+.span_github span{
+    margin: 0 !important;
 }
