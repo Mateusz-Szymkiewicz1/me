@@ -101,9 +101,6 @@ a:focus{
     margin-left: -100px;
     z-index: -1;
 }
-.kitty button{
-    margin-right: 5px;
-}
 .kitty img{
     height: 150px;
     width: 150px;
@@ -273,13 +270,13 @@ legend{
     gap: 30px;
 }
 #section_portfolio fieldset{
-    height: 300px;
-    width: 320px;
+    height: 200px;
+    width: 200px;
 }
 #section_portfolio img{
-    margin-top: 10px;
-    height: 260px;
-    width: 315px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fff;
 }
 #section_kontakt{
     padding-bottom: 50px;
@@ -374,14 +371,14 @@ input[type=submit]{
 }
 @media only screen and (max-width: 900px) {
     #section_portfolio{
-        width: 350px;
+        width: 70%;
     }
 }
 .links i {
     color: #000 !important;
 }
-@media only screen and (max-width: 585px) {
-    #section_portfolio{
+@media only screen and (max-width: 775px) {
+#section_portfolio{
         width: 265px;
     }
     #section_portfolio fieldset{
@@ -392,6 +389,8 @@ input[type=submit]{
         height: 210px;
         width: 240px;
     }
+}
+@media only screen and (max-width: 585px) {
   .span_email, .span_github{
     display: none;
   }
