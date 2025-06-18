@@ -32,16 +32,16 @@ window.work_descriptions = [
         time: "03-04 2023"
     },
     {
-        company: "Egzamin INF.03",
-        job: "Egzamin zawodowy",
-        desc: "Zdana kwalifikacja INF.03 (Tworzenie i administrowanie stronami internetowymi oraz bazami danych). Teoria - 98.5%, Praktyka - 100%",
-        time: "06 2023"
-    },
-    {
         company: "Sopchy",
         job: "Praktyki Zawodowe",
         desc: "Tworzenie i projektowanie aplikacji internetowych w HTML, CSS, JS oraz Wordpress dla kientów. Przygotowywanie grafik do wykorzystania na stronach.",
         time: "10-11 2023"
+    },
+        {
+        company: "Technik Programista",
+        job: "Egzamin zawodowy",
+        desc: "Uzyskany tytuł technika programisty.",
+        time: "2025"
     },
 ]
 document.querySelectorAll(".status span").forEach(span => {
