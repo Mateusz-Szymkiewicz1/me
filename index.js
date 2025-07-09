@@ -37,7 +37,7 @@ window.work_descriptions = [
         desc: "Tworzenie i projektowanie aplikacji internetowych w HTML, CSS, JS oraz Wordpress dla kientów. Przygotowywanie grafik do wykorzystania na stronach.",
         time: "10-11 2023"
     },
-        {
+    {
         company: "Technik Programista",
         job: "Egzamin zawodowy",
         desc: "Uzyskany tytuł technika programisty.",
