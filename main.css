@@ -257,26 +257,26 @@ legend{
 }
 #section_portfolio{
     clear: both;
-    width: 90%;
     padding: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
     margin-bottom: 100px;
+    width: fit-content;
 }
 .portfolio_wrapper{
+    float: right;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 30px;
+    width: fit-content;
 }
 #section_portfolio fieldset{
-    height: 200px;
-    width: 200px;
+    text-align: center;
 }
-#section_portfolio img{
-    height: 100%;
-    width: 100%;
-    border: 2px solid #fff;
+#section_portfolio p{
+    font-size: medium;
+    margin: 0;
 }
 #section_kontakt{
     padding-bottom: 50px;
@@ -377,19 +377,6 @@ input[type=submit]{
 .links i {
     color: #000 !important;
 }
-@media only screen and (max-width: 775px) {
-#section_portfolio{
-        width: 265px;
-    }
-    #section_portfolio fieldset{
-        height: 250px;
-    }
-    #section_portfolio img{
-        margin-top: 10px;
-        height: 210px;
-        width: 240px;
-    }
-}
 @media only screen and (max-width: 585px) {
   .span_email, .span_github{
     display: none;
@@ -435,19 +422,6 @@ input[type=submit]{
   }
   #section_umiej span{
         font-size: 18px;
-    }
-}
-@media screen and (max-width: 375px) {
-  #section_portfolio{
-        width: 240px;
-    }
-    #section_portfolio fieldset{
-        height: 240px;
-    }
-    #section_portfolio img{
-        margin-top: 10px;
-        height: 200px;
-        width: 220px;
     }
 }
 .title-bar-controls button[aria-label=Help]{

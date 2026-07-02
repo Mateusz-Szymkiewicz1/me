@@ -14,11 +14,11 @@ function responsivity(x) {
         document.querySelector("#nav_dosw a").innerHTML = '<i class="fa fa-clipboard"></i>';
         document.querySelector("#nav_omnie a").innerHTML = '<i class="fa fa-user-tie"></i>';
     } else {
-        document.querySelector("#nav_kontakt a").innerHTML = 'Kontakt';
+        document.querySelector("#nav_kontakt a").innerHTML = 'Contact';
         document.querySelector("#nav_portfolio a").innerHTML = 'Portfolio';
-        document.querySelector("#nav_umiej a").innerHTML = 'Umiejętności';
-        document.querySelector("#nav_dosw a").innerHTML = 'Doświadczenie';
-        document.querySelector("#nav_omnie a").innerHTML = 'O mnie';
+        document.querySelector("#nav_umiej a").innerHTML = 'Skills';
+        document.querySelector("#nav_dosw a").innerHTML = 'Experience';
+        document.querySelector("#nav_omnie a").innerHTML = 'About me';
     }
 }
 var x = window.matchMedia("(max-width: 590px)");
@@ -27,21 +27,27 @@ x.addListener(responsivity);
 window.work_descriptions = [
     {
         company: "Karol Walasek Informatyka",
-        job: "Praktyki Zawodowe",
-        desc: "Nauka oraz szkolenie z technologii HTML, CSS, JS, Vue.js, Nuxt.js, SASS",
+        job: "School Internship",
+        desc: "Courses on technologies such as HTML, CSS, JS, Vue.js, Nuxt.js, SASS",
         time: "03-04 2023"
     },
     {
         company: "Sopchy",
-        job: "Praktyki Zawodowe",
-        desc: "Tworzenie i projektowanie aplikacji internetowych w HTML, CSS, JS oraz Wordpress dla kientów. Przygotowywanie grafik do wykorzystania na stronach.",
+        job: "School Internship",
+        desc: "Designing and creating web apps in HTML, CSS, JS and Wordpress for clients. Preparing graphics for webdev use.",
         time: "10-11 2023"
     },
     {
-        company: "Technik Programista",
-        job: "Egzamin zawodowy",
-        desc: "Uzyskany tytuł technika programisty.",
+        company: "Programming Technician",
+        job: "Technician title",
+        desc: "Passed an exam at the end of technical high school.",
         time: "2025"
+    },
+    {
+        company: "AGH",
+        job: "First-level studies",
+        desc: 'Studying Computer Science at the Faculty of Computer Science.',
+        time: "2025-Now"
     },
 ]
 document.querySelectorAll(".status span").forEach(span => {
@@ -132,7 +138,7 @@ document.querySelector("input[type=submit]").addEventListener("click", function(
           );
     }else{
        document.querySelector("textarea").value = "";
-       document.querySelector("textarea").setAttribute("placeholder","Napisz chociaż 10 znaków!  Wierzę w Ciebie!");
+       document.querySelector("textarea").setAttribute("placeholder","Type at least 10 characters! I believe in you!");
     }
 })
 document.querySelector(".scroll_to_top").addEventListener("click", function(){
